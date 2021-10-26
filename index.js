@@ -6,3 +6,9 @@ function opennav() {
         x.className = 'navbar';
     }
 }
+
+
+var date = new Date();
+var year = date.getFullYear();
+
+document.getElementById('date').textContent = year;
