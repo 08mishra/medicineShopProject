@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header {
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fG1lZGljaW5lJTIwY2FiaW5ldHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.navbar {
+    padding: 10px;
+    z-index: 100;
+    position: sticky;
+    color: #000000;
+    border-top: 2px solid #000000;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    float: right;
+    color: #000000;
+    opacity: 1;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.navbar #navicon {
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    .navbar a {
+        display: none;
+        transition: all 0.6s ease;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .navbar #navicon {
+        display: block;
+        float: right;
+    }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive #navicon {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+}
+
+#sidenav {
+    width: 50px;
+    position: relative;
+    top: 50%;
+    right: 15px;
+    font-size: 50px;
+    position: fixed;
+    z-index: 99;
+    background: transparent;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+}
+
+#sidenav a {
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#table-container {
+    height: 100vh;
+    padding: 10px;
+    margin: 10px;
+}
+
+#footer {
+    height: 100vh;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 2px solid #000000;
+    background: rgb(120, 120, 165);
+    transform: skewX(3deg);
+}
