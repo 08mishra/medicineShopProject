@@ -15,7 +15,10 @@
 <body>
     <header id="header">
         <nav id="navbar" class="navbar">
-            <a href="#">prescription</a>
+            <div id="logo">
+                <h1>Logo</h1>
+            </div>
+            <a href="javascript:void(0)">prescription</a>
             <a href="#table-container">our products</a>
             <a href="#bookOrder">BookOrder</a>
             <a id="navicon" href="javascript:void(0);" onclick="opennav()"><i class="fas fa-bars"></i> </a>
@@ -23,6 +26,7 @@
     </header>
     <div id="text-container">
         <input type="text" placeholder="search medecine" id="header-input">
+        <span id="search-span"></span>
         <div id="text-heading">
             <h1>we are the largest<br> <span style="color: rgb(99, 9, 102);">whole sale provider</span></h1>
         </div>
@@ -39,7 +43,7 @@
         </div>
 
         <div id="medicine-container">
-            <div id="template">
+            <div id="template" onclick="table()">
                 <div id="template-heading">
                     <h1>medicine one</h1>
                 </div>
@@ -51,7 +55,7 @@
                 </div>
             </div>
 
-            <div id="template">
+            <div id="template" onclick="table()">
                 <div id="template-heading">
                     <h1>medicine two</h1>
                 </div>
@@ -64,7 +68,7 @@
             </div>
 
 
-            <div id="template">
+            <div id="template" onclick="table()">
                 <div id="template-heading">
                     <h1>medicine three</h1>
                 </div>
@@ -77,7 +81,7 @@
             </div>
 
 
-            <div id="template">
+            <div id="template" onclick="table()">
                 <div id="template-heading">
                     <h1>medicine four</h1>
                 </div>
@@ -90,7 +94,7 @@
             </div>
 
 
-            <div id="template">
+            <div id="template" onclick="table()">
                 <div id="template-heading">
                     <h1>medicine five</h1>
                 </div>
@@ -104,7 +108,7 @@
 
 
 
-            <div id="template">
+            <div id="template" onclick="table()">
                 <div id="template-heading">
                     <h1>medicine six</h1>
                 </div>
@@ -119,9 +123,71 @@
 
 
         </div>
+    </div>
+    <!--here table lies for medicine template-->
 
+
+    <div id="medicinetable-container">
+        <h1>our category 1</h1>
+        <a id="closebtn" href="javascript:void(0);" onclick="closebtn()">&times;</a>
+        <div id="medicine-table">
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+
+            <div id="data1">
+                <h2>hello</h2>
+            </div>
+        </div>
 
     </div>
+
+
+
+    <!--table ends-->
+
+
+
     <div id="bookOrder">
         <div id="order-heading">
             <h1>24 &times 7 <span style="color: rgb(160, 9, 54);">at your service</span></h1>
@@ -131,6 +197,9 @@
             <input type="text" id="name" class="forminput" placeholder="your name" required>
             <label for="emai"></label>
             <input type="email" id="email" class="forminput" placeholder="your email" required>
+            <label for="contact"></label>
+            <input type="text" id="contact" class="forminput" placeholder="your mobile number" required>
+            <span id="contact-span"> </span>
             <label for="address"></label>
             <textarea id="address" class="forminput" required placeholder="your address"></textarea>
             <label for="order"></label>
