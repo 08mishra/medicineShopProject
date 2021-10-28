@@ -336,7 +336,10 @@ body {
 
 /* medicine table css below */
 
-#medicinetable-container {
+
+/* medicine container css upto six*/
+
+#medicinetable-container1 {
     text-align: center;
     /* margin: 80px auto; */
     border-right: 8px solid grey;
@@ -351,10 +354,113 @@ body {
     overflow: hidden;
 }
 
-#medicinetable-container h1 {
+#medicinetable-container1 h1 {
     border-bottom: 2px solid grey;
     padding: 10px;
 }
+
+#medicinetable-container2 {
+    text-align: center;
+    /* margin: 80px auto; */
+    border-right: 8px solid grey;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(125, 151, 160);
+    z-index: 10000;
+    transition: all 0.8s ease;
+    overflow: hidden;
+}
+
+#medicinetable-container2 h1 {
+    border-bottom: 2px solid grey;
+    padding: 10px;
+}
+
+#medicinetable-container3 {
+    text-align: center;
+    /* margin: 80px auto; */
+    border-right: 8px solid grey;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(125, 151, 160);
+    z-index: 1000;
+    transition: all 0.8s ease;
+    overflow: hidden;
+}
+
+#medicinetable-container3 h1 {
+    border-bottom: 2px solid grey;
+    padding: 10px;
+}
+
+#medicinetable-container4 {
+    text-align: center;
+    /* margin: 80px auto; */
+    border-right: 8px solid grey;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(125, 151, 160);
+    z-index: 100000;
+    transition: all 0.8s ease;
+    overflow: hidden;
+}
+
+#medicinetable-container4 h1 {
+    border-bottom: 2px solid grey;
+    padding: 10px;
+}
+
+#medicinetable-container5 {
+    text-align: center;
+    /* margin: 80px auto; */
+    border-right: 8px solid grey;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(125, 151, 160);
+    z-index: 100000;
+    transition: all 0.8s ease;
+    overflow: hidden;
+}
+
+#medicinetable-container5 h1 {
+    border-bottom: 2px solid grey;
+    padding: 10px;
+}
+
+#medicinetable-container6 {
+    text-align: center;
+    /* margin: 80px auto; */
+    border-right: 8px solid grey;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(125, 151, 160);
+    z-index: 100000;
+    transition: all 0.8s ease;
+    overflow: hidden;
+}
+
+#medicinetable-container6 h1 {
+    border-bottom: 2px solid grey;
+    padding: 10px;
+}
+
+
+/* css for six tables ends here */
 
 #medicine-table {
     display: grid;
